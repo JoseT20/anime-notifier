@@ -3,10 +3,11 @@ from selenium import webdriver
 from datetime import date
 import time
 
-url = 'https://www.crunchyroll.com/es-es/simulcastcalendar'
+url = 'https://www.crunchyroll.com/simulcastcalendar'
 driver = webdriver.Chrome('./chromedriver')
 driver.get(url)
 source_data = driver.page_source
+
 soup = BeautifulSoup(source_data, 'lxml')
 today_data = soup.find('li', class_='day active today')
 new_episodes = today_data.find_all('li')
