@@ -19,7 +19,3 @@ def email_alert(subject: str, body: str, to: str, file_data: bytes, file_name: s
     server.send_message(msg)
 
     server.quit()
-
-
-if __name__ == '__main__':
-    email_alert("Hey", "What is up fam!?", "pcuesta0902@sdsu.edu")
