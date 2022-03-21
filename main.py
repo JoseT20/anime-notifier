@@ -1,8 +1,9 @@
 import email_alert
+import time
+import os
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from datetime import date
-import time
 
 print(f'Would you like to get updates on free or premium episodes?')
 episode_type = input('>')
@@ -40,7 +41,7 @@ def new_episodes_alert():
 
     with open(f'{file_path}', 'rb') as f:
         file_data = f.read()
-        file_name = f.name
+        file_name = os.path.basename(f.name)
 
     email_alert.email_alert(f'{date_today} Crunchyroll {episode_type} Releases', 'Txt file attached...', 'abraham990522@gmail.com', file_data, file_name)
 
