@@ -2,11 +2,12 @@ import smtplib
 from email.message import EmailMessage
 
 
-def email_alert(subject, body, to):
+def email_alert(subject: str, body: str, to: str, file_data: bytes, file_name: str):
     msg = EmailMessage()
     msg.set_content(body)
     msg['subject'] = subject
     msg['to'] = to
+    msg.add_attachment(file_data, maintype='application', subtype='octet-stream', filename=file_name)
 
     user = "email.test.578.g4"
     msg['from'] = user
