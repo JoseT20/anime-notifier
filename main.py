@@ -48,5 +48,6 @@ def new_episodes_alert():
 if __name__ == '__main__':
     while True:
         new_episodes_alert()
+        print(f'Check your email for episode updates! \n')
         time_wait = 24
         time.sleep(time_wait * 3600)
