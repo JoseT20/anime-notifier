@@ -3,6 +3,7 @@ import time
 import os
 from bs4 import BeautifulSoup
 from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
 from datetime import date
 
 print(f'Would you like to get updates on free or premium episodes?')
@@ -10,7 +11,7 @@ episode_type = input('>')
 
 url_free = 'https://www.crunchyroll.com/simulcastcalendar?filter=free'
 url_premium = 'https://www.crunchyroll.com/simulcastcalendar?filter=premium'
-driver = webdriver.Chrome(executable_path='/usr/local/bin/chromedriver')
+driver = webdriver.Chrome(executable_path=ChromeDriverManager().install())
 
 
 def new_episodes_alert():
