@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54750e16-4d42-4ee6-afdb-54ec05075cf7" name="Changes" comment="Remove email_alert.py test code">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-    </list>
+    <list default="true" id="54750e16-4d42-4ee6-afdb-54ec05075cf7" name="Changes" comment="Update .getignore" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647856623162</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Update .getignore">
+      <created>1648012380388</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1648012380388</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -130,6 +134,7 @@
     <MESSAGE value="Add sample output txt file" />
     <MESSAGE value="Fix output txt file name" />
     <MESSAGE value="Remove email_alert.py test code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove email_alert.py test code" />
+    <MESSAGE value="Update .getignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update .getignore" />
   </component>
 </project>
