@@ -10,7 +10,7 @@ episode_type = input('>')
 
 url_free = 'https://www.crunchyroll.com/simulcastcalendar?filter=free'
 url_premium = 'https://www.crunchyroll.com/simulcastcalendar?filter=premium'
-driver = webdriver.Chrome('./chromedriver')
+driver = webdriver.Chrome(executable_path='/usr/local/bin/chromedriver')
 
 
 def new_episodes_alert():
