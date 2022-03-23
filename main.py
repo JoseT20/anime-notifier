@@ -25,6 +25,13 @@ def new_episodes_alert():
     date_today = date.today().strftime("%b-%d-%Y")
     today_data = soup.find('li', class_='day active today')
     new_episodes = today_data.find_all('li')
+
+    dir_name = 'Anime Releases'
+    if not os.path.exists(dir_name):
+        os.mkdir('Anime Releases')
+        print(f'Directory "{dir_name}" Created\n')
+    else:
+        print(f'Directory "{dir_name}" already exists\n')
     file_path = f'Anime Releases/{episode_type}-{date_today}.txt'
 
     for new_episode in new_episodes:
