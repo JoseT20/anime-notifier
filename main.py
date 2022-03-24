@@ -8,6 +8,8 @@ from datetime import date
 
 print(f'Would you like to get updates on free or premium episodes?')
 episode_type = input('>')
+print(f'Enter your email:')
+email = input('>')
 
 url_free = 'https://www.crunchyroll.com/simulcastcalendar?filter=free'
 url_premium = 'https://www.crunchyroll.com/simulcastcalendar?filter=premium'
@@ -51,7 +53,7 @@ def new_episodes_alert():
         file_data = f.read()
         file_name = os.path.basename(f.name)
 
-    email_alert.email_alert(f'{date_today} Crunchyroll {episode_type} Releases', 'Txt file attached...', 'abraham990522@gmail.com', file_data, file_name)
+    email_alert.email_alert(f'{date_today} Crunchyroll {episode_type} Releases', 'Txt file attached...', str(email), file_data, file_name)
 
 
 if __name__ == '__main__':
