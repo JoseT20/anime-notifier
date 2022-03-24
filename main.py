@@ -64,7 +64,7 @@ def new_episodes_alert():
                 file_name = os.path.basename(f.name)
 
             email_alert.email_alert(f'{date_today} Crunchyroll {episode_type} Releases', 'Txt file attached...', str(email), file_data, file_name)
-            print(f'Check your email for episode updates!\n')
+            print(f'Check your email for the newest {episode_type} episodes!\n')
 
 
 if __name__ == '__main__':
